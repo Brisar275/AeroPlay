@@ -3,7 +3,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className=" rounded-3xl py-4 px-30 flex items-center justify-between text-white bg-gradient-to-b from-zinc-950 to-zinc-600 shadow-[inset_0_4px_5px_rgba(255,255,255,0.2)]">
+    <nav className=" rounded-3
+    xl py-2 px-30 flex items-center justify-between text-white bg-gradient-to-b from-zinc-950 to-zinc-600 shadow-[inset_0_4px_5px_rgba(255,255,255,0.2)]">
       <div className="p-1 rounded-full bg-gradient-to-b from-zinc-300 to-black inline-block">
         <h1 className="rounded-full font-[IBM.ttf] font-bold text-2xl p-2 bg-gradient-to-b from-zinc-950 to-zinc-600 shadow-[inset_0_4px_5px_rgba(255,255,255,0.2)]">
           <Link href={"/"}>AeroPlay</Link>
