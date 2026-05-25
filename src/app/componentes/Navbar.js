@@ -3,29 +3,37 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className=" rounded-3
-    xl py-2 px-30 flex items-center justify-between text-white bg-gradient-to-b from-zinc-500 to-zinc-400">
-      <div className="p-1 rounded-full bg-gradient-to-b from-zinc-300 to-black inline-block">
-        <h1 className="rounded-full font-[IBM.ttf] font-bold text-2xl p-2 bg-gradient-to-b from-zinc-950 to-zinc-600 shadow-[inset_0_4px_5px_rgba(255,255,255,0.2)]">
+    <nav className=" 
+     pt-4 px-30 flex items-center justify-between text-white bg-gradient-to-b from-blue-200 to-blue-300">
+      <div>
+        <h1 className="rounded-lg font-[IBM.ttf] font-bold text-xl pt-2 pb-2 px-6 bg-gradient-to-b from-blue-400 to-blue-800 shadow-[inset_0_0px_3px_rgba(0,0,0.8)]">
           <Link href={"/"}>AeroPlay</Link>
         </h1>
       </div>
       <div>
-        <ul className="flex flex-nowrap gap-4 font-[IBM.ttf] text-white">
-          <li className="px-1 py-2 rounded-full bg-gradient-to-b from-zinc-300 to-black inline-block">
+        <ul className="flex flex-nowrap font-[IBM.ttf] text-white">
+          <li>
             <Link
               href={"/"}
-              className="rounded-full font-[IBM.ttf] text-xl py-2 px-3 bg-gradient-to-b from-zinc-950 to-zinc-600 shadow-[inset_0_4px_5px_rgba(255,255,255,0.2)]"
+              className=" block rounded-l-lg font-[IBM.ttf] text-xl pt-2 pb-2 px-6 bg-gradient-to-b from-blue-400 to-blue-800 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
             >
               Inicio
             </Link>
           </li>
-          <li className="px-1 py-2 rounded-full bg-gradient-to-b from-zinc-300 to-black inline-block">
+          <li>
             <Link
               href={"/"}
-              className="rounded-full font-[IBM.ttf] text-xl py-2 px-3 bg-gradient-to-b from-zinc-950 to-zinc-600 shadow-[inset_0_4px_5px_rgba(255,255,255,0.2)]"
+              className=" block font-[IBM.ttf] text-xl pt-2 pb-2 px-6 bg-gradient-to-b from-blue-400 to-blue-800 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
             >
               Populares
+            </Link>
+          </li>
+                    <li>
+            <Link
+              href={"/"}
+              className=" block rounded-r-lg font-[IBM.ttf] text-xl py-2 px-6 bg-gradient-to-b from-blue-400 to-blue-800 shadow-[inset_0_0px_3               px_rgba(0,0,01)]"
+            >
+              Perfil
             </Link>
           </li>
         </ul>
