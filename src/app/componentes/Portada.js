@@ -36,10 +36,10 @@ export default function Portada({ endpoint }) {
   }
 
   return (
-    <div className="px-15">
+    <div className="px-40">
       {" "}
-      <div className="bg-gradient-to-b from-zinc-600 to-zinc-900 p-2 rounded-2xl h-screen">
-        <section className="relative w-full h-full flex items-end pb-12 px-8 overflow-hidden p-30 rounded-xl">
+      <div className="bg-gradient-to-b from-blue-400 to-blue-800 shadow-[inset_0_0px_3px_rgba(0,0,01)] p-2 rounded-2xl h-full">
+        <section className="relative w-full h-full flex items-end pb-10 px-8 overflow-hidden p-30 rounded-xl">
           <img
             src={`https://image.tmdb.org/t/p/original${peliculaRandom.backdrop_path}`}
             alt={`Fondo de ${peliculaRandom.title}`}
@@ -59,7 +59,7 @@ export default function Portada({ endpoint }) {
 
             <Link
               href={`/movie/${peliculaRandom.id}`}
-              className="inline-block bg-gradient-to-b from-zinc-300 to-zinc-600 text-black px-8 py-3 rounded-full font-bold text-lg"
+              className="inline-block bg-gradient-to-b from-blue-400 to-blue-800 shadow-[inset_0_0px_3px_rgba(0,0,01)] text-white px-8 py-3 rounded-lg text-lg"
             >
               Ver detalle
             </Link>
