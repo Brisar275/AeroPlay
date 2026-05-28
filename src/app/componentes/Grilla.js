@@ -30,12 +30,13 @@ export default function GrillaSección({ titulo, endpoint }) {
 
   return (
     <section className="py-15 px-40 font-[IBM.ttf]">
+      <Link href={"/"} className="block mb-6 cursor-pointer">
       <h2 className="rounded-lg font-[IBM.ttf] text-white font-bold text-xl py-2 px-6 bg-gradient-to-b from-gray-400 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)] mb-6">
         {titulo}
       </h2>
-
+    </Link>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {peliculas.map((pelicula) => (
+        {peliculas.slice(0, 8).map((pelicula) => ( //hace que solo muestre los 8 primeros
           <article
             key={pelicula.id}
             className="tarjeta-pelicula rounded-lg font-[IBM.ttf] font-bold text-xl px-6 py-4 bg-gradient-to-b from-gray-500 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]"

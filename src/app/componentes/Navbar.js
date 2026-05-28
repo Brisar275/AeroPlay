@@ -3,8 +3,10 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className=" 
-     py-4 px-40 flex items-center justify-between text-white bg-gradient-to-b from-red-300/30 to-red-900">
+    <nav
+      className=" 
+     py-4 px-40 flex items-center justify-between text-white bg-gradient-to-b from-red-300/30 to-red-900"
+    >
       <div>
         <h1 className="rounded-lg font-[IBM.ttf] font-bold text-xl pt-2 pb-2 px-6 bg-gradient-to-b from-gray-400 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]">
           <Link href={"/"}>AeroPlay</Link>
@@ -25,15 +27,23 @@ const Navbar = () => {
               href={"/"}
               className=" block font-[IBM.ttf] text-xl pt-2 pb-2 px-6 bg-gradient-to-b from-gray-400 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
             >
-              Populares
+              Tendencias
             </Link>
           </li>
                     <li>
             <Link
               href={"/"}
+              className=" block font-[IBM.ttf] text-xl pt-2 pb-2 px-6 bg-gradient-to-b from-gray-400 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
+            >
+              Cartelera
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"/"}
               className=" block rounded-r-lg font-[IBM.ttf] text-xl py-2 px-6 bg-gradient-to-b from-gray-400 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
             >
-              Perfil
+              Populares
             </Link>
           </li>
         </ul>
