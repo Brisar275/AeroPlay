@@ -60,7 +60,7 @@ export default function GrillaSección({ titulo, endpoint }) {
             </p>
 
             <Link
-              href={`/movie/${pelicula.id}`}
+              href={`pelicula/${pelicula.id}`}
               className="block w-full text-center bg-red-900 bg-gradient-to-b from-red-400/60 to-red-900 shadow-[inset_0_0px_3px_rgba(0,0,01)] text-white font-light text-lg py-2 rounded-lg"
             >
               Ver detalle
