@@ -61,7 +61,7 @@ export default function DetallePelicula() {
 
           <div className="flex flex-wrap gap-2 mb-4">
             {pelicula.genres.map((genero) => (
-              <span className="bg-red-900 bg-gradient-to-b from-red-400/60 to-red-900 shadow-[inset_0_0px_3px_rgba(0,0,01)] px-4 py-2 rounded-md" >
+              <span className="bg-indigo-900 bg-gradient-to-b from-indigo-400/60 to-indigo-900 shadow-[inset_0_0px_3px_rgba(0,0,01)] px-4 py-2 rounded-md" >
                 {genero.name}
               </span>
             ))}

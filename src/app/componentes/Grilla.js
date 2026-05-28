@@ -35,7 +35,7 @@ export default function GrillaSección({ titulo, endpoint, limite}) {
         {titulo}
       </h2>
     </Link>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
         {(limite ? peliculas.slice(0, limite) : peliculas).map((pelicula) => ( //hace que solo muestre los 8 primeros si es que existe un límite  (así en la home se ven menos pero en la pag se ven todas)
           <article
             key={pelicula.id}
@@ -61,7 +61,7 @@ export default function GrillaSección({ titulo, endpoint, limite}) {
 
             <Link
               href={`pelicula/${pelicula.id}`}
-              className="block w-full text-center bg-red-900 bg-gradient-to-b from-red-400/60 to-red-900 shadow-[inset_0_0px_3px_rgba(0,0,01)] text-white font-light text-lg py-2 rounded-lg"
+              className="block w-full text-center bg-indigo-900 bg-gradient-to-b from-indigo-400/60 to-indigo-900 shadow-[inset_0_0px_3px_rgba(0,0,01)] text-white font-light text-lg py-2 rounded-lg"
             >
               Ver detalle
             </Link>

@@ -18,19 +18,19 @@ export default function Home() {
         <Grilla
           titulo="Películas en Tendencia"
           endpoint={endpoints.tendencias}
-          limite={8}
+          limite={12}
         />
 
         <Grilla
           titulo="Películas Populares"
           endpoint={endpoints.populares}
-          limite={8}
+          limite={12}
         />
 
         <Grilla
           titulo="En Cartelera"
           endpoint={endpoints.cartelera}
-          limite={8}
+          limite={12}
         />
       </main>
     </div>
