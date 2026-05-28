@@ -24,7 +24,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href={"/"}
+              href={"/tendencias"}
               className=" block font-[IBM.ttf] text-xl pt-2 pb-2 px-6 bg-gradient-to-b from-gray-400 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
             >
               Tendencias
@@ -32,7 +32,7 @@ const Navbar = () => {
           </li>
                     <li>
             <Link
-              href={"/"}
+              href={"/cartelera"}
               className=" block font-[IBM.ttf] text-xl pt-2 pb-2 px-6 bg-gradient-to-b from-gray-400 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
             >
               Cartelera
@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href={"/"}
+              href={"/populares"}
               className=" block rounded-r-lg font-[IBM.ttf] text-xl py-2 px-6 bg-gradient-to-b from-gray-400 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
             >
               Populares

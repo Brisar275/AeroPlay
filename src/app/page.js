@@ -1,4 +1,4 @@
-import Grilla from "./componentes/Grilla"
+import Grilla from "./componentes/Grilla";
 import Portada from "./componentes/Portada";
 
 export default function Home() {
@@ -13,22 +13,24 @@ export default function Home() {
   return (
     <div>
       <main>
-
         <Portada endpoint={endpoints.tendencias} />
 
-        <Grilla 
-          titulo="Películas en Tendencia" 
-          endpoint={endpoints.tendencias} 
+        <Grilla
+          titulo="Películas en Tendencia"
+          endpoint={endpoints.tendencias}
+          limite={8}
         />
-        
-        <Grilla 
-          titulo="Películas Populares" 
-          endpoint={endpoints.populares} 
+
+        <Grilla
+          titulo="Películas Populares"
+          endpoint={endpoints.populares}
+          limite={8}
         />
-        
-        <Grilla 
-          titulo="En Cartelera" 
-          endpoint={endpoints.cartelera} 
+
+        <Grilla
+          titulo="En Cartelera"
+          endpoint={endpoints.cartelera}
+          limite={8}
         />
       </main>
     </div>

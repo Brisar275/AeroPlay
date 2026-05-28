@@ -58,7 +58,7 @@ export default function Portada({ endpoint }) {
             </p>
 
             <Link
-              href={`/movie/${peliculaRandom.id}`}
+              href={`/pelicula/${peliculaRandom.id}`}
               className="inline-block bg-red-900 bg-gradient-to-b from-red-400/60 to-red-900 shadow-[inset_0_0px_3px_rgba(0,0,01)] text-white px-8 py-3 rounded-lg text-lg"
             >
               Ver detalle

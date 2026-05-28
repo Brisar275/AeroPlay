@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Link from "next/link";
 
-export default function GrillaSección({ titulo, endpoint }) {
+export default function GrillaSección({ titulo, endpoint, limite}) {
   const [peliculas, setPeliculas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -36,7 +36,7 @@ export default function GrillaSección({ titulo, endpoint }) {
       </h2>
     </Link>
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {peliculas.slice(0, 8).map((pelicula) => ( //hace que solo muestre los 8 primeros
+        {(limite ? peliculas.slice(0, limite) : peliculas).map((pelicula) => ( //hace que solo muestre los 8 primeros si es que existe un límite  (así en la home se ven menos pero en la pag se ven todas)
           <article
             key={pelicula.id}
             className="tarjeta-pelicula rounded-lg font-[IBM.ttf] font-bold text-xl px-6 py-4 bg-gradient-to-b from-gray-500 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
