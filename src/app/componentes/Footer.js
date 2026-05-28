@@ -27,7 +27,7 @@ const Footer = () => {
             Tendencia
           </Link>
           <Link
-            href={"/tendencias"}
+            href={"/cartelera"}
             className="hover:text-white"
           >
             Cartelera
