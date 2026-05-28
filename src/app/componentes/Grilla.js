@@ -30,7 +30,7 @@ export default function GrillaSección({ titulo, endpoint }) {
 
   return (
     <section className="py-15 px-40 font-[IBM.ttf]">
-      <h2 className="rounded-lg font-[IBM.ttf] text-white font-bold text-xl py-2 px-6 bg-gradient-to-b from-blue-400 to-blue-800 shadow-[inset_0_0px_3px_rgba(0,0,01)] mb-6">
+      <h2 className="rounded-lg font-[IBM.ttf] text-white font-bold text-xl py-2 px-6 bg-gradient-to-b from-gray-400 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)] mb-6">
         {titulo}
       </h2>
 
@@ -38,7 +38,7 @@ export default function GrillaSección({ titulo, endpoint }) {
         {peliculas.map((pelicula) => (
           <article
             key={pelicula.id}
-            className="tarjeta-pelicula rounded-lg font-[IBM.ttf] font-bold text-xl px-6 py-4 bg-gradient-to-b from-gray-100 to-gray-200 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
+            className="tarjeta-pelicula rounded-lg font-[IBM.ttf] font-bold text-xl px-6 py-4 bg-gradient-to-b from-gray-500 to-gray-900 shadow-[inset_0_0px_3px_rgba(0,0,01)]"
           >
             <img
               src={`https://image.tmdb.org/t/p/w500${pelicula.poster_path}`}
@@ -50,17 +50,17 @@ export default function GrillaSección({ titulo, endpoint }) {
               {pelicula.title}
             </h3>
 
-            <p className="text-sm text-zinc-400 mb-1">
+            <p className="text-sm text-zinc-300 mb-1">
               Estreno: {pelicula.release_date}
             </p>
 
-            <p className="text-sm text-zinc-400 mb-4">
+            <p className="text-sm text-zinc-300 mb-4">
               Puntuación: {pelicula.vote_average}
             </p>
 
             <Link
               href={`/movie/${pelicula.id}`}
-              className="block w-full text-center bg-gradient-to-b from-blue-400 to-blue-800 shadow-[inset_0_0px_3px_rgba(0,0,01)] text-white font-light text-lg py-2 rounded-lg"
+              className="block w-full text-center bg-red-900 bg-gradient-to-b from-red-400/60 to-red-900 shadow-[inset_0_0px_3px_rgba(0,0,01)] text-white font-light text-lg py-2 rounded-lg"
             >
               Ver detalle
             </Link>
